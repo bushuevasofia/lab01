@@ -59,7 +59,7 @@ echo "Остальных файлов: $other_count" ```
 ```
 7. Выведите в консоль все файлы, где упоминается последовательность `boost::asio`.  
 Команда: ```grep -rl "boost::asio" ~/boost_1_69_0```  
-Вывод (будет ссылка).
+Вывод (build.txt).
 8. Скомпилирутйе *boost*. Можно воспользоваться [инструкцией](https://www.boost.org/doc/libs/1_61_0/more/getting_started/unix-variants.html#or-build-custom-binaries) или [ссылкой](https://codeyarns.com/2017/01/24/how-to-build-boost-on-linux/).  
 Команды:  
 ```sh
@@ -67,7 +67,7 @@ cd ~/boost_1_69_0
 ./bootstrap.sh --prefix=./build
 ./b2 --build-dir=build stage
 ```
-Вывод (сссылка).  
+Вывод (build_log.txt).  
 9. Перенесите все скомпилированные на предыдущем шаге статические библиотеки в директорию `~/boost-libs`.  
 ```sh
 mkdir ~/boost-libs
